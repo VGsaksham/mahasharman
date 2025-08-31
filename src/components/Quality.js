@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { HiOutlineCheckCircle } from 'react-icons/hi';
 
 const qualityPoints = [
-  'GMP Certified Manufacturing',
   'In-house Quality Control Lab',
   'Raw Material Authentication',
   'Standardized Production Process',
@@ -70,15 +69,7 @@ const Quality = () => {
               ))}
             </div>
 
-            <div className="pt-6">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-primary"
-              >
-                Download Quality Certificate
-              </motion.button>
-            </div>
+
           </motion.div>
         </div>
       </div>

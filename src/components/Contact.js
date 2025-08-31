@@ -5,21 +5,27 @@ import { HiOutlinePhone, HiOutlineMail, HiOutlineLocationMarker } from 'react-ic
 const contactInfo = [
   {
     icon: <HiOutlinePhone className="w-6 h-6" />,
-    title: 'Phone',
-    details: '+91 1234567890',
-    link: 'tel:+911234567890'
+    title: 'Phone Numbers',
+    details: [
+      { number: '+91 9592882249', link: 'tel:+919592882249' },
+      { number: '+91 8360919650', link: 'tel:+918360919650' },
+      { number: '+91 9855911176', link: 'tel:+919855911176' }
+    ],
+    isMultiple: true
   },
   {
     icon: <HiOutlineMail className="w-6 h-6" />,
     title: 'Email',
     details: 'info@mahasharman.com',
-    link: 'mailto:info@mahasharman.com'
+    link: 'mailto:info@mahasharman.com',
+    isMultiple: false
   },
   {
     icon: <HiOutlineLocationMarker className="w-6 h-6" />,
     title: 'Address',
     details: 'Industrial Area, Phase 1, City, State - PIN',
-    link: 'https://maps.google.com'
+    link: 'https://maps.google.com',
+    isMultiple: false
   }
 ];
 
@@ -93,24 +99,44 @@ const Contact = () => {
             className="space-y-8"
           >
             {contactInfo.map((info, index) => (
-              <motion.a
+              <motion.div
                 key={info.title}
-                href={info.link}
-                target="_blank"
-                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex items-start space-x-4 p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300"
+                className="p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300"
               >
+                <div className="flex items-start space-x-4">
                 <div className="text-accent">
                   {info.icon}
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-1">{info.title}</h3>
-                  <p className="text-gray-200">{info.details}</p>
+                  <div className="flex-1">
+                    <h3 className="font-semibold mb-2 text-white">{info.title}</h3>
+                    {info.isMultiple ? (
+                      <div className="space-y-1">
+                        {info.details.map((phone, phoneIndex) => (
+                          <a
+                            key={phoneIndex}
+                            href={phone.link}
+                            className="block text-gray-200 hover:text-white transition-colors duration-300"
+                          >
+                            {phone.number}
+                          </a>
+                        ))}
+                      </div>
+                    ) : (
+                      <a
+                        href={info.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-200 hover:text-white transition-colors duration-300"
+                      >
+                        {info.details}
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </motion.a>
+              </motion.div>
             ))}
           </motion.div>
         </div>

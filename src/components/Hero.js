@@ -49,6 +49,9 @@ const Hero = () => {
           <p className="text-lg md:text-xl mb-8 text-gray-200">
             Discover the power of authentic Ayurvedic medicines crafted with centuries-old wisdom and modern scientific precision at Mahasharman Healthcare.
           </p>
+          <p className="text-base mb-8 text-gray-300 max-w-2xl">
+            Proudly manufacturing medicines for <strong>Sanyasi Ayurveda</strong> and <strong>Shri Sanatani Enterprises</strong> with GMP compliance.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="products"
