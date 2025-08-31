@@ -51,7 +51,7 @@ const Quality = () => {
               Quality is Our Priority
             </h2>
             <p className="text-gray-600">
-              At Mahasharman Healthcare, we maintain the highest standards of quality in every aspect of our manufacturing process. Our state-of-the-art facility combines traditional Ayurvedic principles with modern technology to ensure product excellence.
+              At Maha Sharman Healthcare, we maintain the highest standards of quality in every aspect of our manufacturing process. Our state-of-the-art facility combines traditional Ayurvedic principles with modern technology to ensure product excellence.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

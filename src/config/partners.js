@@ -1,18 +1,18 @@
-// Manufacturing Partners Configuration
-// Easy to edit: Add, remove, or modify partners and their logos
+// Distribution Partners Configuration
+// Easy to edit: Add, remove, or modify distribution partners and their logos
 
 export const manufacturingPartners = [
   {
     name: 'Sanyasi Ayurveda',
-    description: 'Leading manufacturer of authentic Ayurvedic formulations with decades of expertise in traditional medicine production.',
-    logo: '/sanyasi-ayurveda-logo.svg' // Change this path to update the logo
+    description: 'Leading distributor of authentic Ayurvedic formulations with extensive market reach and customer trust.',
+    logo: '/partners/sanyasi_ayurveda_logo.jpg' // Updated to use partners directory
   },
   {
     name: 'Shri Sanatani Enterprises',
-    description: 'Specialized in manufacturing high-quality Ayurvedic medicines following ancient Vedic principles and modern standards.',
-    logo: '/shri-sanatani-logo.svg' // Change this path to update the logo
+    description: 'Specialized distributor of high-quality Ayurvedic medicines with nationwide distribution network.',
+    logo: '/partners/shri_sanatani_logo.jpeg' // Updated to use partners directory
   }
-  // To add more partners, simply add new objects here:
+  // To add more distribution partners, simply add new objects here:
   // {
   //   name: 'New Partner Name',
   //   description: 'Description of the new partner...',
@@ -22,6 +22,6 @@ export const manufacturingPartners = [
 
 // Logo configuration - easy to update paths
 export const partnerLogos = {
-  'Sanyasi Ayurveda': '/sanyasi-ayurveda-logo.svg',
-  'Shri Sanatani Enterprises': '/shri-sanatani-logo.svg'
+  'Sanyasi Ayurveda': '/partners/sanyasi_ayurveda_logo.jpg',
+  'Shri Sanatani Enterprises': '/partners/shri_sanatani_logo.jpeg'
 }; 

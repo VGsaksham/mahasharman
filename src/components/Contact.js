@@ -16,15 +16,15 @@ const contactInfo = [
   {
     icon: <HiOutlineMail className="w-6 h-6" />,
     title: 'Email',
-    details: 'info@mahasharman.com',
-    link: 'mailto:info@mahasharman.com',
+    details: 'mahasharmanhealthcare@gmail.com',
+    link: 'mailto:mahasharmanhealthcare@gmail.com',
     isMultiple: false
   },
   {
     icon: <HiOutlineLocationMarker className="w-6 h-6" />,
     title: 'Address',
-    details: 'Industrial Area, Phase 1, City, State - PIN',
-    link: 'https://maps.google.com',
+    details: 'Maha Sharman Healthcare, 395/2, Basant Road, Near Sharman Jain Sweets, Civil Lines, Ludhiana, Punjab, India 141001',
+    link: 'https://maps.app.goo.gl/WZXkoFzUEo7MdLJ88',
     isMultiple: false
   }
 ];
@@ -140,6 +140,43 @@ const Contact = () => {
             ))}
           </motion.div>
         </div>
+
+        {/* Google Maps Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-16"
+        >
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold mb-4">Find Maha Sharman Healthcare</h3>
+            <p className="text-gray-200">Visit our manufacturing facility in Ludhiana</p>
+          </div>
+          <div className="bg-white rounded-lg p-4 shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.1234567890123!2d75.8500!3d30.9010!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837f72c85d8d%3A0x57450dd3078cc3f5!2sGhumar%20Mandi%2C%20Ludhiana%2C%20Punjab%20141001!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mahasharman Healthcare Location - Ludhiana, Punjab"
+              className="rounded-lg"
+            ></iframe>
+            <div className="mt-4 text-center">
+              <a
+                href="https://maps.app.goo.gl/WZXkoFzUEo7MdLJ88"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300"
+              >
+                <HiOutlineLocationMarker className="w-5 h-5 mr-2" />
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

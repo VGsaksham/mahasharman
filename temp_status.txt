@@ -1,0 +1,11 @@
+ M auto-update.bat
+ M src/components/About.js
+ M src/components/Contact.js
+ M src/components/Footer.js
+ M src/components/Hero.js
+ M src/components/Quality.js
+ M src/config/partners.js
+?? auto-update-fixed.bat
+?? auto-update-simple.ps1
+?? public/partners/
+?? temp_status.txt
