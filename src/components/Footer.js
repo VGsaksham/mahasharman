@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { HiOutlinePhone, HiOutlineMail, HiOutlineLocationMarker, HiOutlineOfficeBuilding } from 'react-icons/hi';
 
 const Footer = () => {

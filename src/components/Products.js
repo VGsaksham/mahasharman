@@ -185,11 +185,11 @@ const ProductModal = ({ product, isOpen, onClose }) => {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.8, opacity: 0, y: 50 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="bg-white rounded-2xl max-w-4xl w-full max-h-[95vh] overflow-hidden shadow-2xl border border-gray-100"
+            className="bg-white rounded-2xl max-w-4xl w-full max-h-[95vh] shadow-2xl border border-gray-100 flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modern Header with Gradient */}
-            <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 p-8 text-white overflow-hidden">
+            <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 p-8 text-white overflow-hidden flex-shrink-0">
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full -mr-16 -mt-16"></div>
@@ -211,7 +211,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
             </div>
 
             {/* Content with Side-by-Side Layout */}
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row flex-1 overflow-y-auto scroll-smooth">
               {/* Left Side - Product Image and Quick Info */}
               <div className="lg:w-1/2 p-8 bg-gradient-to-br from-gray-50 to-gray-100">
                 {/* Product Image */}
@@ -246,66 +246,32 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Right Side - Detailed Information */}
+              {/* Right Side - Key Benefits Only */}
               <div className="lg:w-1/2 p-8">
                 {/* Key Benefits */}
                 <div className="mb-8">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800 flex items-center">
+                  <h3 className="text-2xl font-bold mb-6 text-gray-800 flex items-center">
                     <HiOutlineShieldCheck className="w-6 h-6 text-primary mr-3" />
                     Key Benefits
                   </h3>
-                  <div className="grid grid-cols-1 gap-3">
+                  <div className="grid grid-cols-1 gap-4">
                     {product.detailedInfo.benefits.map((benefit, index) => (
                       <motion.div
                         key={index}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.1 }}
-                        className="flex items-center p-3 bg-green-50 rounded-lg border-l-4 border-green-400"
+                        className="flex items-center p-4 bg-green-50 rounded-xl border-l-4 border-green-400 shadow-sm hover:shadow-md transition-shadow duration-300"
                       >
-                        <div className="w-2 h-2 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 font-medium">{benefit}</span>
+                        <div className="w-3 h-3 bg-green-500 rounded-full mr-4 flex-shrink-0"></div>
+                        <span className="text-gray-700 font-medium text-lg">{benefit}</span>
                       </motion.div>
                     ))}
                   </div>
                 </div>
 
-                {/* Ingredients */}
-                <div className="mb-8">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">Ingredients</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {product.detailedInfo.ingredients.map((ingredient, index) => (
-                      <motion.span
-                        key={index}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: index * 0.05 }}
-                        className="px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium hover:bg-primary/20 transition-colors duration-300"
-                      >
-                        {ingredient}
-                      </motion.span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* How to Use */}
-                <div className="mb-8">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">How to Use</h3>
-                  <div className="bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
-                    <p className="text-gray-700 leading-relaxed">{product.detailedInfo.howToUse}</p>
-                  </div>
-                </div>
-
-                {/* Precautions */}
-                <div className="mb-8">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">Precautions</h3>
-                  <div className="bg-amber-50 p-4 rounded-xl border-l-4 border-amber-400">
-                    <p className="text-gray-700 leading-relaxed">{product.detailedInfo.precautions}</p>
-                  </div>
-                </div>
-
                 {/* Action Buttons */}
-                <div className="flex gap-4 pt-6 border-t border-gray-200">
+                <div className="flex gap-4 pt-8 pb-4 border-t border-gray-200">
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
