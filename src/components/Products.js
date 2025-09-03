@@ -65,44 +65,44 @@ const products = [
     }
   },
   {
-    name: 'Jod Dard Tablet',
-    description: 'Ayurvedic tablets for joint pain relief and mobility improvement',
-    benefits: ['Joint Pain Relief', 'Mobility', 'Anti-inflammatory'],
-    image: '/products/img4.jpeg',
+    name: 'Nabhi Oil',
+    description: 'Ayurvedic navel oil to support digestion, detoxification, and immunity',
+    benefits: ['Digestion Support', 'Detox', 'Immunity'],
+    image: '/products/img2.jpeg',
     detailedInfo: {
-      ingredients: ['Guggulu', 'Shallaki', 'Ginger', 'Turmeric', 'Black Pepper', 'Ashwagandha'],
-      dosage: '1-2 tablets, twice daily with warm water',
-      duration: 'Take for 8-12 weeks for joint health',
-      precautions: 'Consult doctor if you have bleeding disorders',
-      howToUse: 'Take with warm water after meals for better absorption',
+      ingredients: ['Mustard Oil', 'Coconut Oil', 'Ajwain', 'Hing', 'Fennel', 'Ayurvedic Herbs'],
+      dosage: '2-3 drops on the navel once daily',
+      duration: 'Use regularly for 6-8 weeks for best results',
+      precautions: 'For external use only; discontinue if irritation occurs',
+      howToUse: 'Clean the navel area and apply 2-3 drops, massage gently in a circular motion',
       benefits: [
-        'Reduces joint inflammation and pain naturally',
-        'Improves joint flexibility and mobility',
-        'Strengthens bones and connective tissues',
-        'Natural pain relief without side effects',
-        'Supports overall musculoskeletal health'
+        'Supports healthy digestion and reduces bloating',
+        'Helps in gentle detoxification',
+        'Moisturizes and nourishes skin around the navel',
+        'Promotes relaxation and better sleep',
+        'Traditional Ayurvedic wellness ritual'
       ]
     }
   },
   {
-    name: 'Stabhan Tablet',
-    description: 'Natural tablets for sexual performance',
-    benefits: ['Sexual Performance', 'Endurance', 'Confidence'],
-    image: '/products/img5.png',
+    name: 'Dard Nivarak Oil',
+    description: 'Herbal pain-relief oil for joints and muscles',
+    benefits: ['Pain Relief', 'Anti-inflammatory', 'Mobility'],
+    image: '/products/img10.jpeg',
     detailedInfo: {
-      ingredients: ['Safed Musli', 'Kaunch Beej', 'Ashwagandha', 'Gokshura', 'Shilajit', 'Natural Binders'],
-      dosage: '1-2 tablets, twice daily with warm milk',
-      duration: 'Take for 4-6 weeks for optimal results',
-      precautions: 'Consult doctor if you have heart conditions',
-      howToUse: 'Take with warm milk, preferably on empty stomach',
+      ingredients: ['Mahanarayan Oil', 'Gandharvahastadi Oil', 'Nilgiri Oil', 'Camphor', 'Wintergreen', 'Sesame Oil'],
+      dosage: 'Apply 2-3 times daily on affected area',
+      duration: 'Use consistently for 4-8 weeks for sustained relief',
+      precautions: 'For external use only; avoid broken skin; keep away from eyes',
+      howToUse: 'Warm the oil slightly, apply to affected area and massage for 5-10 minutes',
       benefits: [
-        'Improves sexual performance and endurance',
-        'Helps with premature ejaculation',
-        'Boosts confidence and self-esteem',
-        'Natural and safe formulation',
-        'Supports overall male reproductive health'
+        'Relieves joint and muscle pain naturally',
+        'Reduces stiffness and supports mobility',
+        'Soothes inflammation and swelling',
+        'Fast-absorbing, non-sticky formulation',
+        'Ideal for chronic aches and post-workout recovery'
       ]
-    }
+    },
   },
   {
     name: 'Piles Tablet',
