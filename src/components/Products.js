@@ -102,7 +102,47 @@ const products = [
         'Fast-absorbing, non-sticky formulation',
         'Ideal for chronic aches and post-workout recovery'
       ]
-    },
+    }
+  },
+  {
+    name: 'Jod Dard Tablet',
+    description: 'Ayurvedic tablets for joint pain relief and mobility improvement',
+    benefits: ['Joint Pain Relief', 'Mobility', 'Anti-inflammatory'],
+    image: '/products/img4.jpeg',
+    detailedInfo: {
+      ingredients: ['Guggulu', 'Shallaki', 'Ginger', 'Turmeric', 'Black Pepper', 'Ashwagandha'],
+      dosage: '1-2 tablets, twice daily with warm water',
+      duration: 'Take for 8-12 weeks for joint health',
+      precautions: 'Consult doctor if you have bleeding disorders',
+      howToUse: 'Take with warm water after meals for better absorption',
+      benefits: [
+        'Reduces joint inflammation and pain naturally',
+        'Improves joint flexibility and mobility',
+        'Strengthens bones and connective tissues',
+        'Natural pain relief without side effects',
+        'Supports overall musculoskeletal health'
+      ]
+    }
+  },
+  {
+    name: 'Stabhan Tablet',
+    description: 'Natural tablets for sexual performance',
+    benefits: ['Sexual Performance', 'Endurance', 'Confidence'],
+    image: '/products/img5.png',
+    detailedInfo: {
+      ingredients: ['Safed Musli', 'Kaunch Beej', 'Ashwagandha', 'Gokshura', 'Shilajit', 'Natural Binders'],
+      dosage: '1-2 tablets, twice daily with warm milk',
+      duration: 'Take for 4-6 weeks for optimal results',
+      precautions: 'Consult doctor if you have heart conditions',
+      howToUse: 'Take with warm milk, preferably on empty stomach',
+      benefits: [
+        'Improves sexual performance and endurance',
+        'Helps with premature ejaculation',
+        'Boosts confidence and self-esteem',
+        'Natural and safe formulation',
+        'Supports overall male reproductive health'
+      ]
+    }
   },
   {
     name: 'Piles Tablet',
