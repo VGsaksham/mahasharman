@@ -28,7 +28,7 @@ const products = [
     name: 'Shilajit',
     description: 'Pure Himalayan Shilajit for energy, vitality, and overall wellness',
     benefits: ['Energy Boost', 'Vitality', 'Overall Wellness'],
-    image: '/products/img2.jpeg',
+    image: '/products/img9.jpeg',
     detailedInfo: {
       ingredients: ['Pure Shilajit Resin', 'Natural Binders', 'No Artificial Additives'],
       dosage: '1-2 tablets, twice daily with warm milk or water',
